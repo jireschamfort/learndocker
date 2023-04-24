@@ -1,8 +1,8 @@
 FROM ubuntu:16.04
-RUN apt update && apt install -y\
+RUN apt update && apt install -y \
 arp-scan \
 iputils-ping \
-iproute2 \
+iproute2 
 
 COPY webapp /
 CMD ["/bin/bash"]
